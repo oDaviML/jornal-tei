@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#container1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: #f7f7f7;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    box-shadow: -7px 0px 15px -3px rgba(0, 0, 0, 0.1), 8px 0px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+#mudar {
+    user-select: none;
+}
+
+
+header {
+    background-color: #393b3c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.artigo {
+    background-color: rgb(218, 218, 218);
+    padding: 1rem;
+    border-radius: 10px 10px 10px 10px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 250px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.artigo img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+
+.artigo h2 {
+    font-family: 'Poppins', sans-serif;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+
+.artigo p {
+    font-family: 'Roboto', sans-serif;
+    padding-left: 10px;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    text-align: justify;
+}
+
+.artigo:hover {
+    background-color: rgb(221, 221, 221);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#prnnoticia {
+    grid-column: 1 / span 2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #e2231a;
+    color: #fff;
+    border-radius: 10px;
+    width: 14rem;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+#prnnoticia:hover {
+    background-color: #c71b14;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+#prnnoticia:hover:active {
+    background-color: #ae160f;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.separator {
+    grid-column: 1 / span 2;
+    height: 2px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+
+footer {
+    background-color: #393b3c;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer nav a {
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+#indicadores {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.indicador {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.indicador.ativo {
+    background-color: blue;
+}
